@@ -1,0 +1,117 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  background: rgba(84, 84, 84, 0.65);
+  line-height: 1.6;
+  display: flex;
+  justify-content: flex-start;
+  margin: 100px;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.todo-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  background: white;
+  max-width: 600px;
+  padding: 20px;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.todo-app h1{
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.input-container{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.input-container input{
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border-color: rgba(84, 84, 84, 0.65);
+}
+
+button{
+  padding: 10px 25px;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+ul{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  padding: 0px;
+}
+
+.todo-list li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  list-style-type: none;
+  padding: 8px
+}
+
+.todo-list li span{
+  width: 65%;
+}
+
+.todo-list li .todo-btn{
+  display: flex;
+  gap: 15px;
+}
+
+li:nth-child(odd){
+  background: #d1d1d1;
+}
+
+button, input{
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.9
+}
