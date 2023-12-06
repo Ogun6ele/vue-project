@@ -3,7 +3,7 @@
 
 <template>
   <div class="todo-app">
-    <h1>Todo Item</h1>
+    <h1>Todo Items</h1>
 
     <div class="input-container">
       <input
@@ -29,7 +29,7 @@
       </li>
     </ul>
 
-    <button @click="clearAllTodos">Clear All</button>
+    <button @click="clearAllTodos">Clear Items</button>
     <!-- <button @click="clearCompletedTodos">Clear Completed</button>
 
     <div>
